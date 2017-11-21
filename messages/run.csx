@@ -1,6 +1,6 @@
 #r "Newtonsoft.Json"
 #load "BasicQnAMakerDialog.csx"
-#load "Dialogs.JansenLuisDialog.csx"
+#load "JansenLuisDialog.csx"
     
 using System;
 using System.Net;
