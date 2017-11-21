@@ -11,9 +11,9 @@ using Microsoft.Bot.Builder.Luis.Models;
 
 // For more information about this template visit http://aka.ms/azurebots-csharp-luis
 [Serializable]
-public class BasicLuisDialog : LuisDialog<object>
+public class JansenLuisDialog : LuisDialog<object>
 {
-    public BasicLuisDialog() : base(new LuisService(new LuisModelAttribute("0c4ef301-11d6-46c1-a5d8-fc7f6e41c3de", "e7920d7198c04145a22ad1efe3082433" )))
+    public JansenLuisDialog() : base(new LuisService(new LuisModelAttribute("0c4ef301-11d6-46c1-a5d8-fc7f6e41c3de", "e7920d7198c04145a22ad1efe3082433" )))
     {
     }
 
