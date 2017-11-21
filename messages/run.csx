@@ -1,6 +1,6 @@
 #r "Newtonsoft.Json"
 #load "BasicQnAMakerDialog.csx"
-//#load "JansenLuisDialog.csx"
+#load "Dialogs/JansenLuisDialog.csx"
     
 using System;
 using System.Net;
@@ -48,7 +48,7 @@ public static async Task<object> Run(HttpRequestMessage req, TraceWriter log)
             switch (activity.GetActivityType())
             {
                 case ActivityTypes.Message:
-                    await Conversation.SendAsync(activity, () => new BasicQnAMakerDialog());
+                    await Conversation.SendAsync(activity, () => new JansenLuisDialog());
                     break;
                 case ActivityTypes.ConversationUpdate:
                     var client = new ConnectorClient(new Uri(activity.ServiceUrl));
